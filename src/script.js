@@ -1,3 +1,19 @@
+function onMouseOver(infoid){
+    const infoBanner = document.getElementById(infoid)
+    infoBanner.style.zIndex = "10";
+    infoBanner.style.opacity = "1";
+    infoBanner.style.transition = "all 0.5s ease-in";
+}
+
+function onMouseOut(infoid){
+    const infoBanner = document.getElementById(infoid)
+    infoBanner.style.zIndex = "0";
+    infoBanner.style.opacity = "0";
+    infoBanner.style.transition = "all 0.5s ease-out";
+}
+
+
+
 // Função para inicializar um carrossel específico
 function initializeCarousel(carouselId, enableAutoPlay = false) {
     // Seleciona os elementos específicos do carrossel
@@ -34,5 +50,8 @@ function initializeCarousel(carouselId, enableAutoPlay = false) {
 }
 
 // Inicialize os carrosséis
-initializeCarousel('carousel1', true); // Ativa o autoplay para o carrossel 1
-initializeCarousel('carousel2'); // Não ativa autoplay para o carrossel 2
+initializeCarousel('carousel1', true);
+initializeCarousel('carousel2');
+initializeCarousel('carousel3', true);
+initializeCarousel('carousel4', true);
+initializeCarousel('carousel5', true);

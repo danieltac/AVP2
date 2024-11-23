@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onmouseover com ease-in</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            transition: none; /* Nenhuma transição inicialmente */
+        }
+    </style>
+</head>
+<body>
+    <div class="box" 
+        onmouseover="applyEaseIn(this)" 
+        onmouseout="resetEffect(this)">
+    </div>
+
+    <script>
+        // Função para aplicar o efeito ease-in ao passar o mouse
+        function applyEaseIn(element) {
+            element.style.transition = "all 0.5s ease-in"; // Define transição ease-in
+            element.style.backgroundColor = "red"; // Muda a cor
+            element.style.transform = "scale(1.2)"; // Aumenta o tamanho
+        }
+
+        // Função para redefinir o estilo ao sair com o mouse
+        function resetEffect(element) {
+            element.style.transition = "all 0.5s ease-out"; // Define transição ease-out para a saída
+            element.style.backgroundColor = "blue"; // Retorna à cor original
+            element.style.transform = "scale(1)"; // Retorna ao tamanho original
+        }
+    </script>
+</body>
+</html>
