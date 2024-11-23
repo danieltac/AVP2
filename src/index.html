@@ -122,7 +122,7 @@
                 <p class="font-bold text-white text-sm pt-8 pb-2">Featured & Recommended</p>
             </div>
 
-            <div class="container carousel">
+            <div class="container carousel" id="carousel1">
                 <div class="carousel-content">
                     <div class="container flex carousel-item">
                         <div class="container h-full w-3/5">
@@ -183,10 +183,7 @@
                 <button class="carousel-button prev">&#10094;</button>
                 <button class="carousel-button next">&#10095;</button>
             </div>
-            <div class="indicator-container">
-                <div class="indicator" id="indicator-1"></div>
-                <div class="indicator" id="indicator-2"></div>
-            </div>
+
             <!--
             <div class="container flex carousel-div">
                 <div class="container w-3/5">
@@ -246,72 +243,175 @@
     </section>
 
     <section class="">
-        <div>
-            <p class="font-bold text-black text-sm pt-8 pb-2">Special Offers</p>
+        <div class="mx-14">
+            <p class="font-bold text-white text-sm pt-8 pb-2">Special Offers</p>
         </div>
-        <div class="container flex mx-auto w-screen">
-            <div class="container w-4/5 flex gap-3">
-                <div class="container flex flex-col w-2/5">
-                    <div class="item-1">
-                        <div class="container w-full">
-                            <img class="object-cover" src="imagens/victoria-spotlight.jpg" alt="">
+        <div class="carousel w-[1200px] h-auto" id="carousel2">
+            <div class="carousel-content w-full h-full flex transition-transform duration-500 ease-in-out">
+                <div class="flex mx-auto w-full carousel-item flex-shrink-0">
+                    <div class="container w-4/5 flex gap-3 ">
+                        <div class="container flex flex-col w-2/5">
+                            <div class="item-1">
+                                <div class="container w-full">
+                                    <img class="object-cover" src="imagens/victoria-spotlight.jpg" alt="">
+                                </div>
+                                <div class="spotlight px-4 py-2">
+                                    <p class="text-white text-sm pb-2">MIDWEEK DEAL</p>
+                                    <p class="text-white text-xs font-thin pb-1">Offers ends 26 Nov @ 3:00pm.</p>
+                                    <div class="flex items-center">
+                                        <p class="text-yellow-300 bg-green-600 rounded-l px-2 text-2xl font-bold">-50%
+                                        </p>
+                                        <div class="flex flex-col bg-gray-700 pl-4 pr-2 text-right">
+                                            <p class="text-gray-600 text-xs line-through">R$ 179,99</p>
+                                            <p class="text-yellow-300 text-sm">R$ 89,99</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="spotlight px-4 py-2">
-                            <p class="text-white text-sm pb-2">MIDWEEK DEAL</p>
-                            <p class="text-white text-xs font-thin pb-1">Offers ends 26 Nov @ 3:00pm.</p>
-                            <div class="flex items-center">
-                                <p class="text-yellow-300 bg-green-600 rounded-l px-2 text-2xl font-bold">-50%</p>
-                                <div class="flex flex-col bg-gray-700 pl-4 pr-2 text-right">
-                                    <p class="text-gray-600 text-xs line-through">R$ 179,99</p>
-                                    <p class="text-yellow-300 text-sm">R$ 89,99</p>
+
+                        <div class="container flex flex-col w-2/5">
+                            <div class="item-1">
+                                <div class="container w-full">
+                                    <img class="w-full h-full object-cover" src="imagens/outlaws_spotlight.jpg" alt="">
+                                </div>
+                                <div class="spotlight px-4 py-2">
+                                    <p class="text-white text-sm pb-2">MIDWEEK DEAL</p>
+                                    <p class="text-white text-xs font-thin pb-1">Offers ends 26 Nov @ 3:00pm.</p>
+                                    <div class="flex items-center">
+                                        <p class="text-yellow-300 bg-green-600 rounded-l px-2 text-2xl font-bold">-25%
+                                        </p>
+                                        <div class="flex flex-col bg-gray-700 pl-4 pr-2 text-right">
+                                            <p class="text-gray-600 text-xs line-through">R$ 349,99</p>
+                                            <p class="text-yellow-300 text-sm">R$ 262,49</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container flex flex-col w-2/5 mr-4">
+                            <div class="item-1">
+                                <div class="container w-full">
+                                    <img class="w-full h-full object-cover" src="imagens/oni_spotlight.jpg" alt="">
+                                </div>
+                                <div class="spotlight px-4 py-2">
+                                    <p class="text-white text-sm pb-2">FREE WEEKEND</p>
+                                    <p class="text-white text-xs font-thin pb-1">Offers ends 26 Nov @ 3:00pm.</p>
+                                    <div class="flex items-center">
+                                        <p class="text-yellow-300 bg-green-600 rounded-l px-2 text-2xl font-bold">-66%
+                                        </p>
+                                        <div class="flex flex-col bg-gray-700 pl-4 pr-2 text-right">
+                                            <p class="text-gray-600 text-xs line-through">R$ 45,99</p>
+                                            <p class="text-yellow-300 text-sm">R$ 15,63</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col w-1/5 h-full justify-between">
+
+                        <div class="item-1">
+                            <div class="container h-3/4">
+                                <img class="w-full h-max object-cover" src="imagens/mini-banner-diablo.jpg" alt="">
+                            </div>
+                            <div class="flex items-center justify-between spotlight">
+                                <p class="text-xs text-white">Today's deal!</p>
+                                <div class="flex items-center">
+                                    <p class="text-yellow-300 bg-green-600 rounded-l px-2 text-2xl font-bold">-40%</p>
+                                    <div class="flex flex-col bg-gray-700 pl-4 pr-2 text-right">
+                                        <p class="text-gray-600 text-xs line-through">R$ 179,99</p>
+                                        <p class="text-yellow-300 text-sm">R$ 89,99</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item-2">
+                            <div class="container h-3/4">
+                                <img class="w-full h-full object-cover" src="imagens/mini-banner-detroid.jpg" alt="">
+                            </div>
+                            <div class="flex items-center justify-between spotlight">
+                                <p class="text-xs text-white">Today's deal!</p>
+                                <div class="flex items-center">
+                                    <p class="text-yellow-300 bg-green-600 rounded-l px-2 text-2xl font-bold">-70%</p>
+                                    <div class="flex flex-col bg-gray-700 pl-4 pr-2 text-right">
+                                        <p class="text-gray-600 text-xs line-through">R$ 119,99</p>
+                                        <p class="text-yellow-300 text-sm">R$ 35,99</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="container flex flex-col w-2/5">
-                    <div class="item-1">
-                        <div class="container w-full">
-                            <img class="w-full h-full object-cover" src="imagens/outlaws_spotlight.jpg" alt="">
+                <div class="container flex mx-auto w-screen carousel-item flex-shrink-0">
+                    <div class="container w-4/5 flex gap-3 ">
+                        <div class="container flex flex-col w-2/5">
+                            <div class="item-1">
+                                <div class="container w-full">
+                                    <img class="object-cover" src="imagens/victoria-spotlight.jpg" alt="">
+                                </div>
+                                <div class="spotlight px-4 py-2">
+                                    <p class="text-white text-sm pb-2">MIDWEEK DEAL</p>
+                                    <p class="text-white text-xs font-thin pb-1">Offers ends 26 Nov @ 3:00pm.</p>
+                                    <div class="flex items-center">
+                                        <p class="text-yellow-300 bg-green-600 rounded-l px-2 text-2xl font-bold">-50%
+                                        </p>
+                                        <div class="flex flex-col bg-gray-700 pl-4 pr-2 text-right">
+                                            <p class="text-gray-600 text-xs line-through">R$ 179,99</p>
+                                            <p class="text-yellow-300 text-sm">R$ 89,99</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="spotlight px-4 py-2">
-                            <p class="text-white text-sm pb-2">MIDWEEK DEAL</p>
-                            <p class="text-white text-xs font-thin pb-1">Offers ends 26 Nov @ 3:00pm.</p>
-                            <div class="flex items-center">
-                                <p class="text-yellow-300 bg-green-600 rounded-l px-2 text-2xl font-bold">-25%</p>
-                                <div class="flex flex-col bg-gray-700 pl-4 pr-2 text-right">
-                                    <p class="text-gray-600 text-xs line-through">R$ 349,99</p>
-                                    <p class="text-yellow-300 text-sm">R$ 262,49</p>
+
+                        <div class="container flex flex-col w-2/5">
+                            <div class="item-1">
+                                <div class="container w-full">
+                                    <img class="w-full h-full object-cover" src="imagens/outlaws_spotlight.jpg" alt="">
+                                </div>
+                                <div class="spotlight px-4 py-2">
+                                    <p class="text-white text-sm pb-2">MIDWEEK DEAL</p>
+                                    <p class="text-white text-xs font-thin pb-1">Offers ends 26 Nov @ 3:00pm.</p>
+                                    <div class="flex items-center">
+                                        <p class="text-yellow-300 bg-green-600 rounded-l px-2 text-2xl font-bold">-25%
+                                        </p>
+                                        <div class="flex flex-col bg-gray-700 pl-4 pr-2 text-right">
+                                            <p class="text-gray-600 text-xs line-through">R$ 349,99</p>
+                                            <p class="text-yellow-300 text-sm">R$ 262,49</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container flex flex-col w-2/5 mr-4">
+                            <div class="item-1">
+                                <div class="container w-full">
+                                    <img class="w-full h-full object-cover" src="imagens/oni_spotlight.jpg" alt="">
+                                </div>
+                                <div class="spotlight px-4 py-2">
+                                    <p class="text-white text-sm pb-2">FREE WEEKEND</p>
+                                    <p class="text-white text-xs font-thin pb-1">Offers ends 26 Nov @ 3:00pm.</p>
+                                    <div class="flex items-center">
+                                        <p class="text-yellow-300 bg-green-600 rounded-l px-2 text-2xl font-bold">-66%
+                                        </p>
+                                        <div class="flex flex-col bg-gray-700 pl-4 pr-2 text-right">
+                                            <p class="text-gray-600 text-xs line-through">R$ 45,99</p>
+                                            <p class="text-yellow-300 text-sm">R$ 15,63</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="container flex flex-col w-2/5 mr-4">
-                    <div class="item-1">
-                        <div class="container w-full">
-                            <img class="w-full h-full object-cover" src="imagens/oni_spotlight.jpg" alt="">
-                        </div>
-                        <div class="spotlight px-4 py-2">
-                            <p class="text-white text-sm pb-2">FREE WEEKEND</p>
-                            <p class="text-white text-xs font-thin pb-1">Offers ends 26 Nov @ 3:00pm.</p>
-                            <div class="flex items-center">
-                                <p class="text-yellow-300 bg-green-600 rounded-l px-2 text-2xl font-bold">-66%</p>
-                                <div class="flex flex-col bg-gray-700 pl-4 pr-2 text-right">
-                                    <p class="text-gray-600 text-xs line-through">R$ 45,99</p>
-                                    <p class="text-yellow-300 text-sm">R$ 15,63</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                    <div class="flex flex-col w-1/5 h-full justify-between">
 
-            <div class="flex flex-col w-1/5">
-                <div class="flex flex-col">
-                    <div class="flex flex-col w-full h-full">
                         <div class="item-1">
                             <div class="container h-3/4">
                                 <img class="w-full h-max object-cover" src="imagens/mini-banner-diablo.jpg" alt="">
@@ -346,52 +446,16 @@
                     </div>
                 </div>
             </div>
+            <button class="carousel-button prev" id="btn-prev">&#10094;</button>
+            <button class="carousel-button next" id="btn-next">&#10095;</button>
+        </div>
+
+
+
+
 
     </section>
-
-    <script>
-        const carouselContent = document.querySelector('.carousel-content');
-        const items = document.querySelectorAll('.carousel-item');
-        const indicators = document.querySelectorAll('.indicator');
-        let currentIndex = 0;
-
-        // Função para mudar o conteúdo do carousel e o indicador
-        function changeItem() {
-            currentIndex = (currentIndex + 1) % items.length; // Vai para o próximo item e volta para o primeiro no final
-            carouselContent.style.transform = `translateX(-${currentIndex * 100}%)`;
-            updateIndicators();
-        }
-
-        // Atualiza os indicadores para mostrar qual item está ativo
-        function updateIndicators() {
-            indicators.forEach((indicator, index) => {
-                if (index === currentIndex) {
-                    indicator.classList.add('active'); // Adiciona a classe 'active' no item atual
-                } else {
-                    indicator.classList.remove('active'); // Remove a classe 'active' nos outros itens
-                }
-            });
-        }
-
-        // Chama a função changeItem a cada 5 segundos
-        setInterval(changeItem, 5000);
-
-        // Funções para navegação manual
-        document.querySelector('.next').addEventListener('click', () => {
-            currentIndex = (currentIndex + 1) % items.length;
-            carouselContent.style.transform = `translateX(-${currentIndex * 100}%)`;
-            updateIndicators();
-        });
-
-        document.querySelector('.prev').addEventListener('click', () => {
-            currentIndex = (currentIndex - 1 + items.length) % items.length;
-            carouselContent.style.transform = `translateX(-${currentIndex * 100}%)`;
-            updateIndicators();
-        });
-
-        // Inicializa o indicador ativo no início
-        updateIndicators();
-    </script>
+    <script src="script.js"></script>
 
 </body>
 
