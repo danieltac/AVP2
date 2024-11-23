@@ -12,6 +12,10 @@ html{
     background-size: cover;
 }
 
+.info-game{
+    background-color: #BBB9BD;
+}
+
 .spotlight{
     background-image: url("imagens/background_spotlight.jpg");
     background-repeat: no-repeat;
