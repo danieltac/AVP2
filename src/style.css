@@ -1,54 +1,69 @@
-html{
+html {
     background-color: #1B2838;
 }
 
-.container{
+.container {
     max-width: 1200px !important;
 }
 
-.nav-search{
+.nav-search {
     transition: background-color .5s ease-in-out;
 }
 
+.bg-hover {
+    background: linear-gradient(90deg, rgba(33, 162, 255, 0.1) 1.89%, rgba(50, 50, 51, 0) 50%), linear-gradient(180deg, #575860 11.6%, #3A4852 54.73%, #2C2D34 100%);
+}
+
+.bg-arrow{
+    background-color: #515D6B;
+}
+
+.txt-shadow{
+    text-shadow: 2px 2px 8px black;
+}
+
 .banner {
-    transition: opacity 0.5s ease-in-out; /* Transição suave de opacidade */
+    transition: opacity 0.5s ease-in-out;
+    /* Transição suave de opacidade */
 }
 
 .mini-img {
     filter: brightness(50%);
-    transition: filter 0.5s ease-in-out; /* Transição suave */
+    transition: filter 0.5s ease-in-out;
+    /* Transição suave */
 }
 
-.mini-img:hover{
+.mini-img:hover {
     filter: brightness(100%);
 }
 
-.cards{
+.cards {
     background-image: url("imagens/background_maincap_2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.info-game{
+.info-game {
     background-color: #BBB9BD;
 }
 
-.spotlight{
+.spotlight {
     background-image: url("imagens/background_spotlight.jpg");
     background-repeat: no-repeat;
     background-size: auto;
     background-position: bottom;
 }
 
-.mini-banner{
-    background: linear-gradient( to bottom, #ffffff 5%, #abdaf4 95%);
+.mini-banner {
+    background: linear-gradient(to bottom, #ffffff 5%, #abdaf4 95%);
 }
 
 .carousel {
     width: 80%;
     margin: 0 auto;
     overflow: hidden;
-    height: 425px; /* Aumentando a altura dos itens */
+    height: 425px;
+    /* Aumentando a altura dos itens */
     position: relative;
 }
 
@@ -85,23 +100,23 @@ html{
     right: 10px;
 }
 
-.left-vic3{
+.left-vic3 {
     left: 23rem;
 }
 
-.left-star{
+.left-star {
     left: 42.5rem;
 }
 
-.left-oxigen{
+.left-oxigen {
     left: 22rem;
 }
 
-.left-diablo{
+.left-diablo {
     left: 42rem;
 }
 
-.category-cards{
+.category-cards {
     background-size: 105%;
     background-position: center;
     transition: all .2s ease-in-out;
