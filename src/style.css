@@ -63,7 +63,6 @@ html {
     margin: 0 auto;
     overflow: hidden;
     height: 425px;
-    /* Aumentando a altura dos itens */
     position: relative;
 }
 
@@ -114,6 +113,26 @@ html {
 
 .left-diablo {
     left: 42rem;
+}
+
+.left-engine{
+    left: 19rem;
+}
+
+.left-beyond{
+    left: 33.5rem;
+}
+
+.left-cherno{
+    left: 48.5rem;
+}
+
+.left-mxg{
+    left: 27.5rem;
+}
+
+.left-tower{
+    left: 42.5rem;
 }
 
 .category-cards {

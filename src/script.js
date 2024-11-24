@@ -132,7 +132,7 @@ function initializeCarousel(carouselId, enableAutoPlay = false, autoPlayInterval
 }
 
 // Inicialize os carrosséis
-initializeCarousel('carousel1', false, 5000, true); // Pausa ao passar o mouse
+initializeCarousel('carousel1', true, 5000, true); // Pausa ao passar o mouse
 initializeCarousel('carousel2', false); // Não pausa ao passar o mouse
 initializeCarousel('carousel3', true, 3000, false);
 initializeCarousel('carousel4', true, 3000, false);
@@ -140,4 +140,9 @@ initializeCarousel('carousel5', true, 3000, false);
 initializeCarousel('carousel6', true, 3000, false);
 initializeCarousel('carousel7', true, 3000, false);
 initializeCarousel('carousel8', false);
+initializeCarousel('carousel9', true, 3000, false);
+initializeCarousel('carousel10', true, 3000, false);
+initializeCarousel('carousel11', true, 3000, false);
+initializeCarousel('carousel12', true, 3000, false);
+initializeCarousel('carousel13', true, 3000, false);
 
