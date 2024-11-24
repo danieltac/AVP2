@@ -11,7 +11,7 @@
 
 <body>
 
-
+    <!-- HEADER DA PÁGINA -->
     <header class="bg-zinc-900">
         <div class="container flex items-center justify-end gap-2 pt-1 font-light">
             <button class="bg-green-500 hover:bg-green-400 hover:transition-colors text-white p-1 text-xs">Install
@@ -30,7 +30,7 @@
                     <img src="imagens/logo_steam.svg" alt="logo_steam">
                 </figure>
             </div>
-            <!-- NAV -->
+            <!-- NAV HEADER -->
             <div>
                 <nav class="flex">
                     <ul class="flex text-zinc-500 gap-8 items-center font-bold">
@@ -55,7 +55,9 @@
         </div>
     </header>
 
+    <!-- SECTION COM NAV DOS GIFT CARDS E BANNER DE RECOMENDADOS -->
     <section class="flex px-8 pt-8 bg-gradient-to-bl from-blue-900 to-gray-800 mx-0">
+        <!-- NAV DOS GIFT CARDS -->
         <nav class="container w-1/5 flex flex-col">
             <figure class="w-3/5">
                 <img src="imagens/steamcards.png" alt="">
@@ -99,6 +101,7 @@
             </div>
         </nav>
 
+        <!-- NAV BAR COM PESQUISA -->
         <div class="container w-screen">
             <div
                 class="bg-gradient-to-r from-sky-900 to-sky-600 w-full h-fit flex items-center justify-between pt-1 pb-1 px-4">
@@ -122,6 +125,7 @@
                 <p class="font-bold text-white text-sm pt-8 pb-2">Featured & Recommended</p>
             </div>
 
+            <!-- CAROUSEL COM JOGOS DESTACADOS -->
             <div class="container carousel" id="carousel1">
                 <div class="carousel-content">
                     <div class="container flex carousel-item">
@@ -180,16 +184,20 @@
                     </div>
                 </div>
 
+                <!-- BOTÕES PARA NAVEGAÇÃO DO CAROUSEL -->
                 <button class="carousel-button prev">&#10094;</button>
                 <button class="carousel-button next">&#10095;</button>
             </div>
         </div>
     </section>
 
+    <!-- SEÇÃO DE OFERTAS ESPECIAIS -->
     <section class="">
-        <div class="mx-14">
+        <div class="mx-12">
             <p class="font-bold text-white text-sm pt-8 pb-2">Special Offers</p>
         </div>
+
+        <!-- CARDS INVISIVEIS QUE APARECEM COM HOVER NOS JOGOS DO CAROUSEL -->
         <div id="vic3" style="opacity: 0;"
             class="info-game container w-1/4 mx-auto p-3 flex flex-col absolute left-vic3 shadow-xl border border-indigo-500">
             <p>Victoria 3</p>
@@ -303,6 +311,84 @@
                 class="absolute top-[35px] right-0 transform translate-x-1/2 -translate-y-1/2 rotate-45 w-4 h-4 info-game border-r border-t border-indigo-500">
             </div>
         </div>
+        <div id="diablo" style="opacity:0;"
+            class="info-game container w-1/4 mx-auto p-3 h-auto flex flex-col absolute left-diablo shadow-xl border border-indigo-500">
+            <p>Diablo IV</p>
+            <p class="text-xs pb-1">Released: Oct 17, 2023</p>
+            <div class="carousel h-auto w-full" id="carousel6">
+                <div class="carousel-content">
+                    <img class="carousel-item" src="imagens/diablo-1.jpg" alt="">
+                    <img class="carousel-item" src="imagens/diablo-2.jpg" alt="">
+                    <img class="carousel-item" src="imagens/diablo-3.jpg" alt="">
+                    <img class="carousel-item" src="imagens/diablo-4.jpg" alt="">
+                </div>
+                <button class="carousel-button prev hidden absolute" id="btn-prev">&#10094;</button>
+                <button class="carousel-button next hidden absolute" id="btn-next">&#10095;</button>
+            </div>
+            <div class="text-xs text-white bg-slate-600 mt-1 p-1 rounded">
+                <p>Overall user reviews:</p>
+                <p><span class="text-blue-400">Mostly Positive</span> (28,041 reviews)</p>
+            </div>
+
+            <div class="text-xs pt-2">
+                <p class="">User tags:</p>
+                <div class="flex gap-1">
+                    <p class="w-fit px-2 text-xs font-light bg-gray-500 text-white rounded">
+                        Action RPG
+                    </p>
+                    <p class="w-fit px-2 text-xs font-light bg-gray-500 text-white rounded">
+                        Loot
+                    </p>
+                    <p class="w-fit px-2 text-xs font-light bg-gray-500 text-white rounded">
+                        Isometric
+                    </p>
+                </div>
+            </div>
+
+            <div
+                class="absolute top-[35px] right-0 transform translate-x-1/2 -translate-y-1/2 rotate-45 w-4 h-4 info-game border-r border-t border-indigo-500">
+            </div>
+        </div>
+        <div id="astroneer" style="opacity:0;"
+            class="info-game container w-1/4 mx-auto p-3 h-auto flex flex-col absolute left-diablo shadow-xl border border-indigo-500">
+            <p>Astroneer</p>
+            <p class="text-xs pb-1">Released: 6 Feb, 2019</p>
+            <div class="carousel h-auto w-full" id="carousel7">
+                <div class="carousel-content">
+                    <img class="carousel-item" src="imagens/astroneer-1.jpg" alt="">
+                    <img class="carousel-item" src="imagens/astroneer-2.jpg" alt="">
+                    <img class="carousel-item" src="imagens/astroneer-3.jpg" alt="">
+                    <img class="carousel-item" src="imagens/astroneer-4.jpg" alt="">
+                </div>
+                <button class="carousel-button prev hidden absolute" id="btn-prev">&#10094;</button>
+                <button class="carousel-button next hidden absolute" id="btn-next">&#10095;</button>
+            </div>
+            <div class="text-xs text-white bg-slate-600 mt-1 p-1 rounded">
+                <p>Overall user reviews:</p>
+                <p><span class="text-blue-400">Very Positive</span> (104,955 reviews)</p>
+            </div>
+
+            <div class="text-xs pt-2">
+                <p class="">User tags:</p>
+                <div class="flex gap-1">
+                    <p class="w-fit px-2 text-xs font-light bg-gray-500 text-white rounded">
+                        Action RPG
+                    </p>
+                    <p class="w-fit px-2 text-xs font-light bg-gray-500 text-white rounded">
+                        Loot
+                    </p>
+                    <p class="w-fit px-2 text-xs font-light bg-gray-500 text-white rounded">
+                        Isometric
+                    </p>
+                </div>
+            </div>
+
+            <div
+                class="absolute bottom-[35px] right-0 transform translate-x-1/2 -translate-y-1/2 rotate-45 w-4 h-4 info-game border-r border-t border-indigo-500">
+            </div>
+        </div>
+
+        <!-- CAROUSEL DE GAMES COM OFERTAS ESPECIAIS -->
         <div class="carousel w-[1200px] h-auto" id="carousel2">
             <div class="carousel-content w-full h-full flex transition-transform duration-500 ease-in-out">
                 <div class="flex mx-auto w-full carousel-item flex-shrink-0">
@@ -350,7 +436,7 @@
                         </div>
 
                         <div class="container flex flex-col w-2/5 mr-4" onmouseover="onMouseOver('oxigen')"
-                        onmouseout="onMouseOut('oxigen')">
+                            onmouseout="onMouseOut('oxigen')">
                             <div class="item-1">
                                 <div class="container w-full">
                                     <img class="w-full h-full object-cover" src="imagens/oni_spotlight.jpg" alt="">
@@ -373,7 +459,7 @@
 
                     <div class="flex flex-col w-1/5 h-full justify-between">
 
-                        <div class="item-1">
+                        <div class="item-1" onmouseover="onMouseOver('diablo')" onmouseout="onMouseOut('diablo')">
                             <div class="container h-3/4">
                                 <img class="w-full h-max object-cover" src="imagens/mini-banner-diablo.jpg" alt="">
                             </div>
@@ -382,24 +468,24 @@
                                 <div class="flex items-center">
                                     <p class="text-yellow-300 bg-green-600 rounded-l px-2 text-2xl font-bold">-40%</p>
                                     <div class="flex flex-col bg-gray-700 pl-4 pr-2 text-right">
-                                        <p class="text-gray-600 text-xs line-through">R$ 179,99</p>
-                                        <p class="text-yellow-300 text-sm">R$ 89,99</p>
+                                        <p class="text-gray-600 text-xs line-through">R$ 229,90</p>
+                                        <p class="text-yellow-300 text-sm">R$ 137,94</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="item-2">
+                        <div class="item-2" onmouseover="onMouseOver('astroneer')" onmouseout="onMouseOut('astroneer')">
                             <div class="container h-3/4">
-                                <img class="w-full h-full object-cover" src="imagens/mini-banner-detroid.jpg" alt="">
+                                <img class="w-full h-full object-cover" src="imagens/astroneer.jpg" alt="">
                             </div>
                             <div class="flex items-center justify-between spotlight">
                                 <p class="text-xs text-white">Today's deal!</p>
                                 <div class="flex items-center">
                                     <p class="text-yellow-300 bg-green-600 rounded-l px-2 text-2xl font-bold">-70%</p>
                                     <div class="flex flex-col bg-gray-700 pl-4 pr-2 text-right">
-                                        <p class="text-gray-600 text-xs line-through">R$ 119,99</p>
-                                        <p class="text-yellow-300 text-sm">R$ 35,99</p>
+                                        <p class="text-gray-600 text-xs line-through">R$ 88,99</p>
+                                        <p class="text-yellow-300 text-sm">R$ 29,36</p>
                                     </div>
                                 </div>
                             </div>
@@ -409,8 +495,8 @@
 
                 <div class="container flex mx-auto w-screen carousel-item flex-shrink-0">
                     <div class="container w-4/5 flex gap-3 ">
-                        <div class="container flex flex-col w-2/5"
-                            onmouseover="document.getElementById('div1').style.display = 'block'">
+                        <div class="container flex flex-col w-2/5" onmouseover="onMouseOver('vic3')"
+                            onmouseout="onMouseOut('vic3')">
                             <div class="item-1">
                                 <div class="container w-full">
                                     <img class="object-cover" src="imagens/victoria-spotlight.jpg" alt="">
@@ -430,7 +516,8 @@
                             </div>
                         </div>
 
-                        <div class="container flex flex-col w-2/5">
+                        <div class="container flex flex-col w-2/5" onmouseover="onMouseOver('star-wars')"
+                            onmouseout="onMouseOut('star-wars')">
                             <div class="item-1">
                                 <div class="container w-full">
                                     <img class="w-full h-full object-cover" src="imagens/outlaws_spotlight.jpg" alt="">
@@ -450,7 +537,8 @@
                             </div>
                         </div>
 
-                        <div class="container flex flex-col w-2/5 mr-4">
+                        <div class="container flex flex-col w-2/5 mr-4" onmouseover="onMouseOver('oxigen')"
+                            onmouseout="onMouseOut('oxigen')">
                             <div class="item-1">
                                 <div class="container w-full">
                                     <img class="w-full h-full object-cover" src="imagens/oni_spotlight.jpg" alt="">
@@ -473,7 +561,7 @@
 
                     <div class="flex flex-col w-1/5 h-full justify-between">
 
-                        <div class="item-1">
+                        <div class="item-1" onmouseover="onMouseOver('diablo')" onmouseout="onMouseOut('diablo')">
                             <div class="container h-3/4">
                                 <img class="w-full h-max object-cover" src="imagens/mini-banner-diablo.jpg" alt="">
                             </div>
@@ -482,24 +570,24 @@
                                 <div class="flex items-center">
                                     <p class="text-yellow-300 bg-green-600 rounded-l px-2 text-2xl font-bold">-40%</p>
                                     <div class="flex flex-col bg-gray-700 pl-4 pr-2 text-right">
-                                        <p class="text-gray-600 text-xs line-through">R$ 179,99</p>
-                                        <p class="text-yellow-300 text-sm">R$ 89,99</p>
+                                        <p class="text-gray-600 text-xs line-through">R$ 229,90</p>
+                                        <p class="text-yellow-300 text-sm">R$ 137,94</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="item-2">
+                        <div class="item-2" onmouseover="onMouseOver('astroneer')" onmouseout="onMouseOut('astroneer')">
                             <div class="container h-3/4">
-                                <img class="w-full h-full object-cover" src="imagens/mini-banner-detroid.jpg" alt="">
+                                <img class="w-full h-full object-cover" src="imagens/astroneer.jpg" alt="">
                             </div>
                             <div class="flex items-center justify-between spotlight">
                                 <p class="text-xs text-white">Today's deal!</p>
                                 <div class="flex items-center">
                                     <p class="text-yellow-300 bg-green-600 rounded-l px-2 text-2xl font-bold">-70%</p>
                                     <div class="flex flex-col bg-gray-700 pl-4 pr-2 text-right">
-                                        <p class="text-gray-600 text-xs line-through">R$ 119,99</p>
-                                        <p class="text-yellow-300 text-sm">R$ 35,99</p>
+                                        <p class="text-gray-600 text-xs line-through">R$ 88,99</p>
+                                        <p class="text-yellow-300 text-sm">R$ 29,36</p>
                                     </div>
                                 </div>
                             </div>
@@ -510,7 +598,123 @@
             <button class="carousel-button prev" id="btn-prev">&#10094;</button>
             <button class="carousel-button next" id="btn-next">&#10095;</button>
         </div>
+    </section>
 
+    <!-- SECTION DE CATEGORIAS DE GAMES -->
+    <section class="mt-4 w-full">
+        <div class="mx-12">
+            <p class="font-bold text-white text-sm pt-8 pb-2">Browse by Category</p>
+        </div>
+        <div class="flex ml-12 container justify-center items-center" id="carousel8"
+            style="position: relative; overflow: hidden;">
+            <div class="carousel-content container carousel-content transition-transform duration-500 ease-in-out">
+                <div class="flex mx-auto w-[1200px] gap-3 carousel-item flex-shrink-0">
+                    <div id="city-card"
+                        class="container category-cards rounded-lg category-item w-[240px] h-[233px] flex justify-center items-end"
+                        onmouseover="onCategoryCard('city-card', 'city-p', 'strategy_cities_settlements.webp')"
+                        onmouseout="offCategoryCard('city-card', 'city-p', 'strategy_cities_settlements.webp')"
+                        style="background-image: radial-gradient(115% 120% at 0% 0%, transparent, #2880a6), url(imagens/strategy_cities_settlements.webp);">
+                        <p id="city-p"
+                            class="bg-white text-blue-400 font-extrabold text-center rounded tracking-widest w-fit px-2 mb-16 z-10">
+                            CITY & SETTLEMENT</p>
+                    </div>
+
+                    <div id="world-card"
+                        class="container category-cards rounded-lg category-item w-[240px] h-[233px] flex justify-center items-end"
+                        onmouseover="onCategoryCard('world-card', 'world-p', 'exploration_open_world.webp')"
+                        onmouseout="offCategoryCard('world-card', 'world-p', 'exploration_open_world.webp')"
+                        style="background-image: radial-gradient(115% 120% at 0% 0%, transparent, #2880a6), url(imagens/exploration_open_world.webp);">
+                        <p id="world-p"
+                            class="bg-white text-blue-400 font-extrabold text-center rounded tracking-widest w-fit px-2 mb-16 z-10">
+                            OPEN WORLD</p>
+                    </div>
+
+                    <div id="rp-card"
+                        class="container category-cards rounded-lg category-item w-[240px] h-[233px] flex justify-center items-end"
+                        onmouseover="onCategoryCard('rp-card', 'rp-p', 'exploration_rp.webp')"
+                        onmouseout="offCategoryCard('rp-card', 'rp-p', 'exploration_rp.webp')"
+                        style="background-image: radial-gradient(115% 120% at 0% 0%, transparent, #2880a6), url(imagens/exploration_rp.webp);">
+                        <p id="rp-p"
+                            class="bg-white text-blue-400 font-extrabold text-center rounded tracking-widest w-fit px-2 mb-16 z-10">
+                            HORROR</p>
+                    </div>
+
+                    <div id="f2p-card"
+                        class="container category-cards rounded-lg category-item w-[240px] h-[233px] flex justify-center items-end"
+                        onmouseover="onCategoryCard('f2p-card', 'f2p-p', 'exploration_f2p.webp')"
+                        onmouseout="offCategoryCard('f2p-card', 'f2p-p', 'exploration_f2p.webp')"
+                        style="background-image: radial-gradient(115% 120% at 0% 0%, transparent, #2880a6), url(imagens/exploration_f2p.webp);">
+                        <p id="f2p-p"
+                            class="bg-white text-blue-400 font-extrabold text-center rounded tracking-widest w-fit px-2 mb-16 z-10">
+                            FREE TO PLAY</p>
+                    </div>
+
+                    <div id="story-card"
+                        class="container category-cards rounded-lg category-item w-[240px] h-[233px] flex justify-center items-end"
+                        onmouseover="onCategoryCard('story-card', 'story-p', 'exploration_story.webp')"
+                        onmouseout="offCategoryCard('story-card', 'story-p', 'exploration_story.webp')"
+                        style="background-image: radial-gradient(115% 120% at 0% 0%, transparent, #2880a6), url(imagens/exploration_story.webp);">
+                        <p id="story-p"
+                            class="bg-white text-blue-400 font-extrabold text-center rounded tracking-widest w-fit px-2 mb-16 z-10">
+                            STORY-RICH</p>
+                    </div>
+                </div>
+
+                <div class="flex mx-auto w-[1200px] gap-3 carousel-item flex-shrink-0">
+                    <div id="racing-card"
+                        class="container category-cards rounded-lg category-item w-[240px] h-[233px] flex justify-center items-end"
+                        onmouseover="onCategoryCard('racing-card', 'racing-p', 'exploration_racing.webp')"
+                        onmouseout="offCategoryCard('racing-card', 'racing-p', 'exploration_racing.webp')"
+                        style="background-image: radial-gradient(115% 120% at 0% 0%, transparent, #2880a6), url(imagens/exploration_racing.webp);">
+                        <p id="racing-p"
+                            class="bg-white text-blue-400 font-extrabold text-center rounded tracking-widest w-fit px-2 mb-16 z-10">
+                            RACING</p>
+                    </div>
+
+                    <div id="action-card"
+                        class="container category-cards rounded-lg category-item w-[240px] h-[233px] flex justify-center items-end"
+                        onmouseover="onCategoryCard('action-card', 'action-p', 'exploration_action.webp')"
+                        onmouseout="offCategoryCard('action-card', 'action-p', 'exploration_action.webp')"
+                        style="background-image: radial-gradient(115% 120% at 0% 0%, transparent, #2880a6), url(imagens/exploration_action.webp);">
+                        <p id="action-p"
+                            class="bg-white text-blue-400 font-extrabold text-center rounded tracking-widest w-fit px-2 mb-16 z-10">
+                            ACTION</p>
+                    </div>
+
+                    <div id="casual-card"
+                        class="container category-cards rounded-lg category-item w-[240px] h-[233px] flex justify-center items-end"
+                        onmouseover="onCategoryCard('casual-card', 'casual-p', 'exploration_casual.webp')"
+                        onmouseout="offCategoryCard('casual-card', 'casual-p', 'exploration_casual.webp')"
+                        style="background-image: radial-gradient(115% 120% at 0% 0%, transparent, #2880a6), url(imagens/exploration_casual.webp);">
+                        <p id="casual-p"
+                            class="bg-white text-blue-400 font-extrabold text-center rounded tracking-widest w-fit px-2 mb-16 z-10">
+                            CASUAL</p>
+                    </div>
+
+                    <div id="strategy-card"
+                        class="container category-cards rounded-lg category-item w-[240px] h-[233px] flex justify-center items-end"
+                        onmouseover="onCategoryCard('strategy-card', 'strategy-p', 'exploration_strategy.webp')"
+                        onmouseout="offCategoryCard('strategy-card', 'strategy-p', 'exploration_strategy.webp')"
+                        style="background-image: radial-gradient(115% 120% at 0% 0%, transparent, #2880a6), url(imagens/exploration_strategy.webp);">
+                        <p id="strategy-p"
+                            class="bg-white text-blue-400 font-extrabold text-center rounded tracking-widest w-fit px-2 mb-16 z-10">
+                            STRATEGY</p>
+                    </div>
+
+                    <div id="puzzle-card"
+                        class="container category-cards rounded-lg category-item w-[240px] h-[233px] flex justify-center items-end"
+                        onmouseover="onCategoryCard('puzzle-card', 'puzzle-p', 'exploration_puzzle.webp')"
+                        onmouseout="offCategoryCard('puzzle-card', 'puzzle-p', 'exploration_puzzle.webp')"
+                        style="background-image: radial-gradient(115% 120% at 0% 0%, transparent, #2880a6), url(imagens/exploration_puzzle.webp);">
+                        <p id="puzzle-p"
+                            class="bg-white text-blue-400 font-extrabold text-center rounded tracking-widest w-fit px-2 mb-16 z-10">
+                            PUZZLE</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-button prev" id="btn-prev">&#10094;</button>
+            <button class="carousel-button next" id="btn-next">&#10095;</button>
+        </div>
     </section>
     <script src="script.js"></script>
 
