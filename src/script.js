@@ -1,46 +1,51 @@
+function onBanner(bannerPrincipal, img_id) {
+    const banner = document.getElementById(bannerPrincipal);
+    const img = document.getElementById(img_id);
+
+    // Cancela qualquer timeout pendente para evitar transições prematuras
+    clearTimeout(bannerTimeout);
+
+    banner.style.opacity = "0";
+    const imagemNova = img.src;
+
+    setTimeout(() => {
+        banner.src = `${imagemNova}`; // Altere para a nova imagem
+        banner.onload = () => {
+            banner.style.opacity = '1'; // Restaura a opacidade
+        }
+    }, 250); // Tempo deve coincidir com o tempo definido na transição (0.5s = 500ms)
+}
+
+function offBanner(bannerPrincipal) {
+    const banner = document.getElementById(bannerPrincipal);
+
+    bannerTimeout = setTimeout(() => {
+        banner.style.opacity = "0";
+        const imagemNova = `${bannerPrincipal}.jpg`;
+
+        setTimeout(() => {
+            banner.src = `imagens/${imagemNova}`; // Altere para a nova imagem
+            banner.onload = () => {
+                banner.style.opacity = '1'; // Restaura a opacidade
+            };
+        }, 250); // Tempo deve coincidir com o tempo definido na transição
+    }, 500); // Tempo adicional antes de voltar à imagem original (1 segundo)
+}
+
+
 function onMouseOver(infoid) {
-    const infoBanner = document.getElementById(infoid)
+    const infoBanner = document.getElementById(infoid);
     infoBanner.style.zIndex = "10";
     infoBanner.style.opacity = "1";
     infoBanner.style.transition = "all 0.5s ease-in";
 }
 
 function onMouseOut(infoid) {
-    const infoBanner = document.getElementById(infoid)
+    const infoBanner = document.getElementById(infoid);
     infoBanner.style.zIndex = "0";
     infoBanner.style.opacity = "0";
     infoBanner.style.transition = "all 0.5s ease-out";
 }
-/*
-function onCategoryCard(card, p) {
-    const cardBanner = document.getElementById(card)
-    const cardP = document.getElementById(p)
-    // Adiciona a transição suave
-    cardBanner.style.transition = "background 0.5s ease-in-out, background-size 0.2s ease-in-out";
-
-    // Readiciona o gradiente junto com a imagem
-    cardBanner.style.background = "radial-gradient(115% 120% at 0% 0%, transparent, #2880a6), url('imagens/strategy_cities_settlements.webp')";
-    cardBanner.style.backgroundPosition = "center";
-    cardBanner.style.backgroundSize = "120%";
-
-    // Transições para o texto
-    cardP.style.transition = "all .2s ease-in-out";
-    cardP.style.marginBottom = "2rem";
-}
-
-function offCategoryCard(card, p) {
-    const cardBanner = document.getElementById(card)
-    const cardP = document.getElementById(p)
-    //cardBanner.style.background = "radial-gradient(115% 120% at 0% 0%, transparent, #2880a6), url('imagens/strategy_cities_settlements.webp')";
-    // Transição para o gradiente
-    cardBanner.style.transition = "background 0.5s ease"; // Transição suave para a propriedade background
-    cardBanner.style.background = "url('imagens/strategy_cities_settlements.webp')"; // Remove o gradiente, mantendo apenas a imagem
-    cardBanner.style.backgroundSize = "100%";
-    cardBanner.style.backgroundPosition = "center";
-    cardBanner.style.scale = "1";
-    cardP.style.marginBottom = "4rem";
-}
-*/
 
 function onCategoryCard(card, p, url) {
     const cardBanner = document.getElementById(card);
@@ -50,10 +55,10 @@ function onCategoryCard(card, p, url) {
     cardBanner.style.background = `radial-gradient(145% 160% at 0% 0%, transparent, #2880a6), url('imagens/${url}')`;
     cardBanner.style.backgroundSize = "120%";
     cardBanner.style.backgroundPosition = "center";
-    cardBanner.style.transition = "all .2s ease-in-out"
+    cardBanner.style.transition = "all .2s ease-in-out";
 
     // Ajusta o texto
-    cardP.style.transition = "all .2s ease-in-out"
+    cardP.style.transition = "all .2s ease-in-out";
     cardP.style.marginBottom = "2rem";
 }
 
@@ -127,7 +132,7 @@ function initializeCarousel(carouselId, enableAutoPlay = false, autoPlayInterval
 }
 
 // Inicialize os carrosséis
-initializeCarousel('carousel1', true, 5000, true); // Pausa ao passar o mouse
+initializeCarousel('carousel1', false, 5000, true); // Pausa ao passar o mouse
 initializeCarousel('carousel2', false); // Não pausa ao passar o mouse
 initializeCarousel('carousel3', true, 3000, false);
 initializeCarousel('carousel4', true, 3000, false);
