@@ -145,4 +145,3 @@ initializeCarousel('carousel10', true, 3000, false);
 initializeCarousel('carousel11', true, 3000, false);
 initializeCarousel('carousel12', true, 3000, false);
 initializeCarousel('carousel13', true, 3000, false);
-

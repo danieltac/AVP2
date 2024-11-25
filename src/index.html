@@ -11,6 +11,29 @@
 
 <body>
 
+    <!---->
+    <template id="carousel-featured">
+        <div class="h-[353px] w-[0px] flex carousel-item">
+            <div class="container h-full w-[616px]">
+                <img class="banner w-full h-full object-cover" src="" alt="">
+            </div>
+            <div class="container flex flex-col w-2/5 h-[353px] cards">
+                <h2 class="text-white pl-3 text-2xl pt-5 pb-5 game-title"></h2>
+                <div class="container flex flex-wrap gap-3 items-center ml-3 justify-start self-stretch thumbnails">
+                    <!-- THUMBNAILS SERÃO ADICIONADAS AQUI -->
+                </div>
+                <h2 class="text-white pl-3 text-2xl font-light pt-3">Now available</h2>
+                <div class="flex items-center justify-between">
+                    <p class="w-fit ml-3 py-1 px-3 text-xs font-light bg-gray-600 text-white rounded tag">Top Seller</p>
+                    <div class="flex items-center">
+                        <p class="text-white pr-3 font-light price"></p>
+                        <figure class="mr-4"><img src="imagens/icon_platform_win.png" alt=""></figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+
     <!-- HEADER DA PÁGINA -->
     <header class="bg-zinc-900">
         <div class="container flex items-center justify-end gap-2 pt-1 font-light">
@@ -41,31 +64,31 @@
                                 </div>
                                 <div
                                     class="invisible font-light text-sm absolute z-50 flex w-max flex-col bg-select shadow-xl group-hover:visible">
-    
+
                                     <a class="block py-1 px-2 bg-select-item text-white">
                                         Home
                                     </a>
-    
+
                                     <a class="block py-1 px-2 bg-select-item text-white">
                                         Discovery Queue
                                     </a>
-    
+
                                     <a class="block py-1 px-2 bg-select-item text-white">
                                         Wishlist
                                     </a>
-    
+
                                     <a class="block py-1 px-2 bg-select-item text-white">
                                         Points Shop
                                     </a>
-    
+
                                     <a class="block py-1 px-2 bg-select-item text-white">
                                         News
                                     </a>
-    
+
                                     <a class="block py-1 px-2 bg-select-item text-white">
                                         Stats
                                     </a>
-    
+
                                 </div>
                             </div>
                         </li>
@@ -76,27 +99,27 @@
                                 </div>
                                 <div
                                     class="invisible font-light text-sm absolute z-50 flex w-full flex-col bg-select shadow-xl group-hover:visible">
-    
+
                                     <a class="block py-1 px-2 bg-select-item text-white">
                                         Home
                                     </a>
-    
+
                                     <a class="block py-1 px-2 bg-select-item text-white">
                                         Discussions
                                     </a>
-    
+
                                     <a class="block py-1 px-2 bg-select-item text-white">
                                         Workshop
                                     </a>
-    
+
                                     <a class="block py-1 px-2 bg-select-item text-white">
                                         Market
                                     </a>
-    
+
                                     <a class="block py-1 px-2 bg-select-item text-white">
                                         Broadcasts
                                     </a>
-    
+
                                 </div>
                             </div>
                         </li>
@@ -436,6 +459,7 @@
 
             <!-- CAROUSEL COM JOGOS DESTACADOS -->
             <div class="carousel container" id="carousel1">
+
                 <div class="carousel-content">
                     <div class="h-[353px] w-[0px] flex carousel-item">
                         <div class="container h-full w-[616px]">
@@ -728,6 +752,8 @@
                 class="absolute bottom-[35px] right-0 transform translate-x-1/2 -translate-y-1/2 rotate-45 w-4 h-4 info-game border-r border-t border-indigo-500">
             </div>
         </div>
+
+
 
         <!-- CAROUSEL DE GAMES COM OFERTAS ESPECIAIS -->
         <div class="carousel w-[1200px] h-auto" id="carousel2">
