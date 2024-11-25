@@ -923,6 +923,11 @@ video {
   width: 100vw;
 }
 
+.w-max {
+  width: -moz-max-content;
+  width: max-content;
+}
+
 .flex-shrink-0 {
   flex-shrink: 0;
 }

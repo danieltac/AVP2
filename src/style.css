@@ -156,3 +156,16 @@ html {
 .bg-footer {
     background-color: #101822;
 }
+
+.bg-select{
+    background-color: #3D4450;
+}
+
+.bg-select-item{
+    background-color: #3D4450;
+}
+
+.bg-select-item:hover{
+    background-color: #DCDEDF;
+    color: black;
+}
